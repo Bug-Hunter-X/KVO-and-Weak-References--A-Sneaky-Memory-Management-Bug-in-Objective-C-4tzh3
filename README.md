@@ -1,0 +1,3 @@
+This repository demonstrates a common but subtle bug in Objective-C related to Key-Value Observing (KVO) and weak references. When an observed object is deallocated while still being observed, accessing its properties can lead to crashes. The provided code showcases this issue and its solution.
+
+The `bug.m` file contains the buggy code, while `bugSolution.m` offers a corrected implementation that avoids the memory management problem.  This example highlights the importance of careful consideration of object lifecycles and the use of weak references in conjunction with KVO.
